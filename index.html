@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Drhex Got You!</title>
+    
+  </head>
+  <body>
+    <h1>Search Vlavar </h1>
+    <label for="searchInput">Search:</label>
+    <input type="text" id="searchInput">
+    <button onclick="search()">SEARCH HERE</button>
+
+
+<script>
+      function search() {
+        // Get the search input from the text box
+        var searchInput = document.getElementById("searchInput").value;
+
+        // Construct the URLs to open in the two tabs
+        var url1 = "https://www.google.com/search?q=" + searchInput + "+site:vlavar.com";
+        var url2 = "https://www.google.com/search?q=" + searchInput + "+site:holooly.com";
+
+        // Open the two tabs
+        window.open(url1, "_blank");
+        window.open(url2, "_blank");
+      }
+    </script>
+  </body>
+</html>
